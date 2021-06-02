@@ -1,0 +1,12 @@
+//@font-face,font-family記述をかく
+@font-face {
+  font-family: $font_ja;
+  src: url('../../font/meiryo.ttf');
+}
+
+@font-face {
+	font-family: $font_en;
+  src: url('../../font/Montserrat-Medium.ttf');
+}
+
+

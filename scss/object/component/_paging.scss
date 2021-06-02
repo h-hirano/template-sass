@@ -1,0 +1,39 @@
+.c-paging{
+  display: block;
+  margin:auto;
+ 
+  
+  &__box{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{ 
+    display: block;
+    border:1px solid $color_btn;
+    
+    
+    height:50px;
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-right:20px;
+    color:$color_btn;
+    background-color: $color_subtext;
+    &:hover{
+      color:$color_subtext;
+      background-color: $color_btn;
+    }
+  }
+  &--active{
+    color:$color_subtext;
+    background-color: $color_btn;
+  }
+  
+}

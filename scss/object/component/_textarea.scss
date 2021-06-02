@@ -1,0 +1,16 @@
+.c-textarea{
+  width:390px;
+  resize:none;
+  font-size: 1.8rem;
+  border: 2px solid #d7dee2;
+  border-radius: 5px;
+  &--comment{
+    width:800px;
+    margin: auto;
+  }
+
+
+  @include l-mobile{
+    width: 100%;
+  }
+}

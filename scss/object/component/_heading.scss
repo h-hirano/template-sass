@@ -1,0 +1,15 @@
+//各画面で使用する共通のイトルやナビゲーションのデザインをかく
+.c-heading{
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin-bottom: 50px;
+  &--sub{
+    font-size: 2.5rem;
+  }
+  &--header{
+    color:$color_header-text;
+    margin-bottom: 0px;
+  }
+}

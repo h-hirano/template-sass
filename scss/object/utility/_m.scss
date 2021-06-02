@@ -1,0 +1,47 @@
+ $count:40;//marginに関する記述をかく
+
+.u-m {
+  &-t {  //margin-top
+    @for $i from 0 through $count {
+      &-#{$i * 5}{
+        margin-top:floor(($i * 5) * 1px);
+      }
+    }
+  }
+  &-a{
+    margin-top:auto;
+  }
+  &-r {  //margin-right
+    @for $i from 0 through $count {
+      &-#{$i * 5}{
+        margin-right:floor(($i * 5) * 1px);
+      }
+    }
+  }
+  &-a{
+    margin-bottom:auto;
+  }
+  &-b {  //margin-bottom
+    @for $i from 0 through $count {
+      &-#{$i * 5}{
+        margin-bottom:floor(($i * 5) * 1px);
+      }
+    }
+  }
+  &-a{
+    margin-top:auto;
+  }
+  &-l {  //margin-left
+    @for $i from 0 through $count {
+      &-#{$i * 5}{
+        margin-left:floor(($i * 5) * 1px);
+      }
+    }
+  }
+  &-a{
+    margin-left:auto;
+  }
+  &-auto{
+    margin:auto;
+  }
+}

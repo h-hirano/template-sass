@@ -1,0 +1,23 @@
+.u-hidden{
+  &-all{
+    display:none;
+  }
+  &-pc{
+    @include l-pc{
+      display:none;
+    }
+  }
+  &-pc_tb{
+    @include l-pc_tablet{
+      display:none;
+    }
+  }
+  &-tb{
+    display: none;
+  }
+  &-smp{
+    @include l-mobile{
+      display:none;
+    }
+  }
+}

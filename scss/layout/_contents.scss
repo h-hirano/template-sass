@@ -1,0 +1,23 @@
+//ヘッダーとフッターの間にあるメインの大枠の記述
+.l-contents{
+  width:100%;
+  padding:0 100px;
+  min-height:100%;
+  padding-top:100px;
+  @include l-mobile{
+    width:100%;
+    padding:80px 10px 0 10px;
+    min-height:100%;
+  }
+  &__in{
+    margin:50px auto;
+    position:relative;
+    // padding-top: 50px;
+    width:1000px;
+    
+    @include l-mobile{
+      width:100%;
+      padding-top: 0px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+
+// ================================================
+// foundation
+// ================================================
+@import "foundation/_variables";
+@import "foundation/_normalize";
+@import "foundation/_mixin-utils";
+@import "foundation/_font";
+@import "foundation/_global";
+@import "foundation/_function";
+
+//@import "foundation/_;
+
+
+// ================================================
+// Layout
+// ================================================
+//その他全ページで共通して使用する大枠の要素
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_contents";
+@import "layout/_navi";
+@import "layout/_wrapview";
+
+// ================================================
+// Modules
+// ================================================
+//共通で使用するパーツのデザイン(ボタンとかページ上部のタイトルの枠とか)
+@import "object/component/_button";
+@import "object/component/_heading";
+@import "object/component/_arrow";
+@import "object/component/_hamburger";
+@import "object/component/_input";
+@import "object/component/_textarea";
+@import "object/component/_paging";
+
+// ================================================
+// utility
+// ================================================
+@import "object/utility/_d"; //display
+@import "object/utility/_ta";//text-align
+@import "object/utility/_m";//margin
+@import "object/utility/_fw";//font-weight
+@import "object/utility/_dn";//display:none
+@import "object/utility/_sdw"; //shadow
+
+
+// ================================================
+// Page(一つの画面でしか使わないクラスとか)
+// ================================================
+@import "object/project/_index";
+@import "object/project/_login";
+@import "object/project/_create_user";
+@import "object/project/_edit_user";
+@import "object/project/_thread_list";
+@import "object/project/_thread_create";
+@import "object/project/_thread_detail";
+
+
+
+// ================================================
+// Vender(外部のライブラリ)
+// ================================================
+// @import "vender/_slick-theme.scss";
+// @import "vender/_slick.scss";
+
+//@import "slick/ajax-loader.gif";
+@import "slick/slick-theme.css";
+@import "slick/slick.scss";
+
+

@@ -1,0 +1,164 @@
+//max-width,min-widthなどの記述
+//valiablesで宣言した変数を使ってかく
+
+
+@mixin FontSize($size){
+  font-size: $size * 0.1rem;
+}
+
+@mixin FontSizeAll($sizepc,$sizesmp){
+@include l-more-than-mobile{
+  @include FontSize($sizepc);
+}
+@include FontSize($sizesmp);
+}
+
+//外部モニター用
+@mixin ll-pc{ 
+@media all  and (min-width:$break-point-l-pc){
+  @content;
+}
+}
+
+//1025以上はpcサイズ
+@mixin l-pc{ 
+@media all  and (min-width:$break-point-pc + 1px){
+  @content;
+}
+}
+
+//600px以上はpcとタブレットとする(細かく分けるのめんどくさいから)
+@mixin l-pc_tablet{
+@media all  and (min-width:$break-point-smp_tablet){
+  @content;
+}
+}
+
+//599以下はスマフォサイズ
+@mixin l-mobile{ 
+@media all  and (max-width:$break-point-smp_tablet - 1px){
+  @content;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//PC,スマホ,タブレットのサイズ適応
+//pc-l | pc-s | tablet | mobile
+
+// ◯ | - | - | -
+// @mixin l-pc-l{
+// 	@media all  and (min-width:$break-point-pc-s + 1px){
+// 		@content;
+// 	}
+// }
+
+// // - | ◯ | - | - 
+// @mixin l-pc-s{
+// 	@media all  and (min-width:$break-point-tablet-l + 1px) and (max-width:$break-point-pc-s){
+// 		@content;
+// 	}
+// }
+
+// // - | - | ◯ | - 
+// @mixin l-tablet{
+// 	@media all  and (min-width: $break-point-tablet-p) and (max-width:$break-point-tablet-l){
+// 		@content;
+// 	}
+// }
+
+
+// @mixin l-tablet-l{
+// 	@media all  and (min-width: $break-point-tablet-p) and (max-width:$break-point-tablet-l) and (orientation:landscape){
+// 		@content;
+// 	}
+// }
+
+
+// @mixin l-tablet-p{
+// 	@media all  and (min-width: $break-point-tablet-p) and (max-width:$break-point-tablet-l) and (orientation:portrait){
+// 		@content;
+// 	}
+// }
+
+
+
+// // - | - | - | ◯ 
+// @mixin l-mobile{　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+//     @media all and(max-width:$break-point-tablet-p - 1px){
+//         @content;
+//     }
+// }
+
+// @mixin l-mobile-l{
+// 	@media all and(max-width:$break-point-tablet-p - 1px) and (orientation:landscape){
+// 			@content;
+// 	}
+// }
+
+// @mixin  l-mobile-p{
+// 	@media all and(max-width:$break-point-tablet-p - 1px) and (orientation:portrait){
+// 			@content;
+// 	}
+// }
+
+// // ◯ | ◯ | - | - 
+// @mixin l-pc{
+// 	@media all  and (min-width:$break-point-tablet-l + 1px){
+// 		@content;
+// 	}
+// }
+
+// //  - | - | ◯ | ◯ | 
+// @mixin l-tablet-and-mobile{
+// 	@media all  and (max-width:$break-point-tablet-l){
+// 		@content;
+// 	}
+// }
+
+// // ◯ | ◯ | ◯ | - 
+// @mixin l-more-than-mobile{
+// 	@media all  and (min-width:$break-point-tablet-p){
+// 		@content;
+// 	}
+// }
+
+// // - | ◯ | ◯ | ◯ 
+// @mixin l-less-than-pc-s{
+// 	@media all  and (max-width:$break-point-pc-s){
+// 		@content;
+// 	}
+// }
+
+// @mixin l-pc-and-tablet-l{
+// 	@media all  and (min-width:$break-point-tablet-l){
+// 		@content;
+// 	}
+// }
+
+
+// @mixin l-tablet-p-and-mobile{
+// 	@media all  and (max-width:$break-point-tablet-p){
+// 		@content;
+// 	}
+// }
+
+
+// @function Get_Margin-Padding_Size($value,$parentsize){
+//     //margin(padding)の値 ÷ 親要素のコンテンツ幅 × 100%
+//     @return ($value / $parentsize) * 100%;
+// }
+

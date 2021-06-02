@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'JaFont';
+  src: url(../font/meiryo.ttf);
+}
+html,body{
+  font-family: 'JaFont';
+}
+#footer{
+  font-family: 'EnFont';
+}

@@ -1,0 +1,24 @@
+//html ,bodyに書きたいことを書く
+html{
+  height:100%;
+  font-size:62.5%;
+}
+body{
+  min-height:100vh;
+  color:$color_text;
+  background-color: $color_bg;
+  font-family: $font_ja;
+  @include FontSize(15);
+  word-wrap:break-word; //必要に応じて文章の途中で改行する
+  // letter-spacing: .1em;
+  line-height: 1.5;
+  position: relative;
+  img{
+    width: 100%;
+  }
+}
+a{
+  &:hover{
+		color:$color_change_link;
+	}
+}
