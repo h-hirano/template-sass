@@ -5,24 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: $font_en;
-  color:$color_footer;
-  // background-color:red;
-  &--min-con{
-    position:absolute;
-    bottom:0px;
-    height: 50px;
-    @include ll-pc{
-      position:absolute;
-      bottom:0px;
-      height: 50px;
-    }
-  }
   @include l-mobile{
     width:100%;
     font-size: 1.3rem;
     position:relative;
-    // padding: 100px 0px 30px;
   }
 }
 

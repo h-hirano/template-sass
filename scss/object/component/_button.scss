@@ -1,15 +1,5 @@
-//ボタンのデザインについてかく
 .c-button{
-  
-    font-size: 1.8rem;
-    color: #FFFFEE;
-    height: 50px;
-    width: 110px;
-    text-align: center;
-    background: $color_btn;
-    &:hover {
-      color: $color_btn;
-      background: $color_btn_revtxt;
-    }
-  
+  &:hover {
+    
+  }
 }
